@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTableScheduler", "TimeTableScheduler\TimeTableScheduler.csproj", "{354D20C4-8A56-48B3-BE19-D70DF7AFDB11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{B46BF641-9522-458D-B497-71A8898365E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{5CDAB947-01F3-4FF7-B3A3-C10E18E3CC0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354D20C4-8A56-48B3-BE19-D70DF7AFDB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354D20C4-8A56-48B3-BE19-D70DF7AFDB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354D20C4-8A56-48B3-BE19-D70DF7AFDB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354D20C4-8A56-48B3-BE19-D70DF7AFDB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46BF641-9522-458D-B497-71A8898365E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46BF641-9522-458D-B497-71A8898365E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46BF641-9522-458D-B497-71A8898365E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46BF641-9522-458D-B497-71A8898365E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDAB947-01F3-4FF7-B3A3-C10E18E3CC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDAB947-01F3-4FF7-B3A3-C10E18E3CC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDAB947-01F3-4FF7-B3A3-C10E18E3CC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDAB947-01F3-4FF7-B3A3-C10E18E3CC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
