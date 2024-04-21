@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "q2fAp6Wl/FG/JF8YRaaN9illN6oD4Lb8v5U/Nn2IBZGbJ9dx2auZvnOvqkkPWYG6ucOOblrgB/mrSSbhNnCl2w==",
+  "dgSpecHash": "pW+62NRtLqWeWtGGWcZKZDuz8XMrGDV0z9DB2OBrxmdhoGV6V5eVwkYbE1DgpjLao6kWk8zrb95pg8wzbRuXtg==",
   "success": true,
-  "projectFilePath": "/Users/bradleycrouch/RiderProjects/TracisTest/TimeTableScheduler/TimeTableScheduler/TimeTableScheduler.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/TimeTableScheduler.csproj",
+  "expectedPackageFiles": [
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

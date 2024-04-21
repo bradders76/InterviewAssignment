@@ -1,5 +1,13 @@
-﻿
-using Tracis.TimeTableScheduler;
+﻿using Tracis.TimeTableScheduler;
+using Microsoft.Extensions.Logging;
+
+// Create an instance of ILogger for the Program class
+var loggerFactory = LoggerFactory.Create(builder =>
+{
+    builder.AddConsole();
+});
+var logger = loggerFactory.CreateLogger<TrackPointCsvFileParser>();
+
 
 /*
  * File:   Program.cs
@@ -8,11 +16,10 @@ using Tracis.TimeTableScheduler;
  * Description: Source code for TimeTableScheduler application suite.
  
  */
-var parser = new  TrackPointCsvFileParser();
+var parser = new  TrackPointCsvFileParser(logger);
 var stationNetwork = new StationNetwork();
 
-
-var trackPoints =  parser.ParseFile("Resources/Tracks.csv");
+if(parser.ParseFile("Resources/Tracks.csv", out var trackPoints))
 
 do
 {
@@ -47,12 +54,14 @@ do
 
             stationNetwork.FindShortestPathStats(startLocation, endLocation, out var distanceKm, out var hops);
 
-            for (int i = 0; i < paths.Count; i++)
+            int i = 0;
+            foreach (var path in paths)
             {
                 Console.WriteLine(
-                    $"Path {i + 1}: From {paths[i].FromLocation} to {paths[i].ToLocation}, Distance: {paths[i].Distance}");
-            }
+                    $"Path {++i}: From {path.FromLocation} to {path.ToLocation}, Distance: {path.Distance}, Passenger: {path.PassengerUse}, Electric: {path.Electric} ");
 
+            }
+            
             if (distanceKm.HasValue && hops.HasValue)
             {
                 Console.WriteLine($"Shortest path distance: {distanceKm} km");

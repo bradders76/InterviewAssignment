@@ -1,5 +1,3 @@
-using System.Security;
-
 /*
  * File:  TrackPointCsvFileParser.cs
  * Author: Bradley Crouch
@@ -7,11 +5,13 @@ using System.Security;
  * Description: Source code for TimeTableScheduler application suite.
  */
 
+using Microsoft.Extensions.Logging;
+
 namespace Tracis.TimeTableScheduler;
 
 public class TrackPointCsvFileParser : ITrackPointParser
 {
-    
+    private ILogger<TrackPointCsvFileParser>? _logger;
     private enum eTrackOrder
     {
         eFromLocation,
@@ -23,9 +23,18 @@ public class TrackPointCsvFileParser : ITrackPointParser
         eEndField 
     }
     
-    public List<ITrackPoint> ParseFile(string filePath)
+    public string? ErrorMessage { get; private set; }
+    
+    public TrackPointCsvFileParser(ILogger<TrackPointCsvFileParser>? logger = null)
     {
-        List<ITrackPoint> trackPoints = new List<ITrackPoint>();
+        _logger = logger;
+    } 
+    
+    public bool  ParseFile(string filePath, out List<ITrackPoint> trackPoints)
+    {
+        _logger?.LogDebug($"Parsing CSV File {filePath} started");
+     
+        trackPoints = new List<ITrackPoint>();
         bool header = true;
         int lineNumber = 0;
         try
@@ -51,7 +60,14 @@ public class TrackPointCsvFileParser : ITrackPointParser
                     
                     if (values.Length != (int) eTrackOrder.eEndField) // Ensure there is correct number of fields
                     {
-                        throw new Exception($"Error on line {lineNumber}, Invalid CSV format. Expected 6 fields per line.");
+                        string errorMessage = $"Error on line {lineNumber}, Invalid CSV format. Expected 6 fields per line.";
+                        
+                        _logger?.LogError(errorMessage);
+                        ErrorMessage = errorMessage;
+                        
+                            
+                        // error, so fail (may wish to have error list
+                        return false;
                     }
                     
                     
@@ -73,10 +89,18 @@ public class TrackPointCsvFileParser : ITrackPointParser
         }
         catch (Exception ex)
         {
-            throw ex;
+            string errorMessage = ex.ToString();
+
+            _logger?.LogError(ex, ex.ToString());
+            
+            // invalid file, so igore
+            trackPoints.Clear();
+            return false;
         }
 
-        return trackPoints;
+        _logger?.LogDebug($"Parsing CSV File {filePath} ended successfully");
+
+        return true;
     }
 
     private static int? ParseNullableInt(string value)

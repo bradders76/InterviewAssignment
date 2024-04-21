@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "hdH0y8iY5EUsYOJPKrqGXpaVVl6dN8cf2iroaMdetyPJ6yM8rD4fUAjDk2GHBc4oJsYDPg4w7LUBMdcBFGiivQ==",
+  "dgSpecHash": "EKwmAVUZp1QFfyBaDp298qEX8C+LEhVpnhjjTzY18G27+BrMLrDVMDwf59UnycCNMRedcaxdzlU2S9e54z274g==",
   "success": true,
-  "projectFilePath": "/Users/bradleycrouch/RiderProjects/TracisTest/TimeTableScheduler/TestApplication/TestApplication.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/bradleycrouch/test/InterviewAssignment/TestApplication/TestApplication.csproj",
+  "expectedPackageFiles": [
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.logging.configuration/8.0.0/microsoft.extensions.logging.configuration.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.logging.console/8.0.0/microsoft.extensions.logging.console.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/Users/bradleycrouch/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

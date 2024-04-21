@@ -8,5 +8,7 @@ namespace Tracis.TimeTableScheduler;
  */
 public interface ITrackPointParser
 {
-    List<ITrackPoint> ParseFile(string filePath);
+
+    public string? ErrorMessage { get; }
+    public bool ParseFile(string filePath, out List<ITrackPoint> trackPoints);
 }

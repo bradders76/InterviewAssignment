@@ -20,14 +20,16 @@ public class UnitTestTestScheduler
     public void TestInitialize()
     {
         var parser = new TrackPointCsvFileParser();
-        _trackPoints =  parser.ParseFile("Resources/Tracks.csv");
+       
+        parser.ParseFile("Resources/Tracks.csv", out _trackPoints);
         
         _stationNetwork = new StationNetwork();
         _stationNetwork.ParseTracks(_trackPoints);
     }
       
     // TODO:: failing test cases, however appears invalid data.. 
-    //        suggestion is to investigate with FindShortestPaths (see TestApplication)
+    //        Suggestion is to investigate with FindShortestPaths (see TestApplication)
+    //        I believe results are valid, but test row data isn't
     [TestMethod]
     [DataRow("BERKHMD", "TRING",    5.994,    1)]
     [DataRow("HYWRDSH", "KEYMERJ",  null,     null)]

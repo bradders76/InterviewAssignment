@@ -1,0 +1,13 @@
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/bin/Debug/net8.0/TimeTableScheduler.deps.json
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/bin/Debug/net8.0/TimeTableScheduler.dll
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/bin/Debug/net8.0/TimeTableScheduler.pdb
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.AssemblyInfoInputs.cache
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.AssemblyInfo.cs
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.csproj.CoreCompileInputs.cache
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.sourcelink.json
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.dll
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/refint/TimeTableScheduler.dll
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.pdb
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/ref/TimeTableScheduler.dll
+/Users/bradleycrouch/test/InterviewAssignment/TimeTableScheduler/obj/Debug/net8.0/TimeTableScheduler.csproj.AssemblyReference.cache
